@@ -5,17 +5,17 @@ os.remove('path of file/directory')
 
 os.rename('file old name', 'new name')
 
-print(os.path.exist('file'))  # True if exist and False if it doesn't
+os.path.exist('file')  # True if exist and False if it doesn't
 
-print(os.path.getsize('file'))
+os.path.getsize('file')
 
 os.path.getmtime('file')  # last modified
 
-print(datetime.datetime.fromtimestamp(os.path.getmtime('file')))
+datetime.datetime.fromtimestamp(os.path.getmtime('file'))
 
-print(os.path.abspath('file'))
+os.path.abspath('file')
 
-print(os.getcwd())  # current directory
+os.getcwd()  # current directory
 
 os.mkdir(directory name)
 
@@ -23,6 +23,8 @@ os.chdir(directory name)
 
 os.rmdir(directory name)  # remove only if directory is empty
 
-print(os.listdir(directory name))
+os.listdir(directory name)
 
 os.isdir(name)
+
+os.environ  # A Dictionary of Environment Variables
